@@ -5,11 +5,11 @@ class StudentDB:
     def __init__(self):
         # Establish a connection to the PostgreSQL database
         self.conn = psycopg2.connect(
-            user = "usr1",
-            password = "pwd1!@#$",
+            user = "student",
+            password = "student",
             host = "localhost",
             port = "5432",
-            database = "A33"
+            database = "A3"
         )
         # Create a cursor object
         self.cur = self.conn.cursor()
