@@ -1,7 +1,7 @@
 import psycopg2
 from datetime import datetime
 
-
+class StudentDB:
     def __init__(self):
         # Establish a connection to the PostgreSQL database
         self.conn = psycopg2.connect(
